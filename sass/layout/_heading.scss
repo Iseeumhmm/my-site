@@ -1,0 +1,39 @@
+.heading {
+  &-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    height: 10rem;
+    width: 100%;
+    text-align: center;
+    }
+  &-secondary {
+    @include respond(43.75em) {
+      margin-top: 1rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    position: relative;
+    margin-top: -2rem;
+  }
+}
+.lets-build-button {
+  animation: moveInBottom 1s ease-out;
+  -webkit-animation: moveInBottom 1s ease-out;
+  backface-visibility: hidden;
+  cursor: pointer;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 200;
+  width: 28rem;
+  height: 5rem;
+  color: #65abb6;
+  border-color: #65abb6;
+  border-width: thin;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+  box-shadow: 0 2rem 4rem rgba(#000, .2);
+}

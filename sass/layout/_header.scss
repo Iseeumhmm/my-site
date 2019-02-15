@@ -1,0 +1,26 @@
+.logo {
+  color: #fff;
+  width: 20rem;
+  padding-left: 4rem;
+  padding-top: 1rem;
+  font-family: "Garamond";
+  font-size: 3rem;
+  &--q {
+    color: #747474;
+  }
+}
+
+.header {
+  height: 12vh;
+  width: 100%;
+  .hamburger-menu {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+  }
+  &__q {
+    margin-bottom: 25rem;
+  }
+}

@@ -1,0 +1,35 @@
+.page-container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/background.png);
+  background-size: cover;
+  @media (max-width: 43.75em) {
+    background-image: url(/img/background_lan-phone.png);
+    background-size: cover;
+    background-position: top;
+  }
+  background-position: top;
+}
+
+.arrow {
+  display: block;
+  height: 10rem;
+  margin: 0 auto;
+  position: relative;
+  right: 20rem;
+  bottom: 5rem;
+  animation: rotateArrow 1s ease-out;
+  backface-visibility: hidden;
+}
+
+.arrow-2 {
+  display: block;
+  height: 10rem;
+  margin: 0 auto;
+  position: relative;
+  left: 18rem;
+  bottom: 15rem;
+  animation: rotateArrowReverse 1s ease-out;
+  backface-visibility: hidden;
+}
