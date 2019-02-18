@@ -1,3 +1,12 @@
+
+  var div = document.getElementById('question-one');
+  setTimeout(function() {
+      div.focus();
+  }, 0);
+
+
+
+
 var send = function() {
     let questionOne = document.getElementById("question-one").innerHTML;
     let questionTwo = document.getElementById("question-two").innerHTML;
@@ -34,6 +43,7 @@ var send = function() {
     if(checkEmail.checkValidity()) {
       request.send(formData);
       console.log(request.response);
+      document.location.href = ("/");
     } else {
       alert("It seems there's a problem with your email: " + document.getElementById('email').validationMessage);
     }

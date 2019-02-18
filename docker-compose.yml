@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  app:
+    container_name: rickheffren_com
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-custom
+    restart: always
+    expose:
+      - 3000
+    environment:
+      - VIRTUAL_HOST=rickheffren.com,www.rickheffren.com
+      - LETSENCRYPT_HOST=rickheffren.com,www.rickheffren.com
+      - LETSENCRYPT_EMAIL=rheffren@gmail.com
+networks:
+   default:
+     external:
+        name: nginx-proxy

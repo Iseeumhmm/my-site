@@ -136,7 +136,6 @@ h2 {
   height: 12vh;
   width: 100%; }
   .header .hamburger-menu {
-    background-color: #000;
     position: absolute;
     top: 0;
     right: 0;
@@ -180,6 +179,9 @@ h2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 31.25rem) {
+    .lets-build-button {
+      width: 23rem; } }
 
 .popup {
   height: 100vh;
@@ -197,7 +199,7 @@ h2 {
     visibility: visible; }
   .popup__content {
     width: 80%;
-    height: 49rem;
+    height: 53rem;
     border-radius: 4px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.88);
@@ -320,6 +322,9 @@ h2 {
         top: 12.4rem;
         width: 36rem;
         height: 36rem; } }
+
+.edit {
+  outline: 0; }
 
 .circle > div {
   background: rgba(255, 255, 255, 0); }
@@ -540,6 +545,7 @@ h2 {
       visibility: hidden; } }
 
 .page-container {
+  overflow: hidden;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -561,6 +567,11 @@ h2 {
   bottom: 5rem;
   animation: rotateArrow 1s ease-out;
   backface-visibility: hidden; }
+  @media (max-width: 31.25rem) {
+    .arrow {
+      height: 8rem;
+      right: 15rem;
+      bottom: 5rem; } }
 
 .arrow-2 {
   display: block;
