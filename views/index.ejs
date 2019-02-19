@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134696483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134696483-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1">
-    <title>Rick Heffren Web Developer</title>
-    <meta name="description" content="Full stack web developer and designer">
+    <title>Rick Heffren Full Stack Web Development and Design</title>
+    <link rel="icon" type="image/png" href="https://www.rickheffren.com/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://www.rickheffren.com/img/favicon-16x16.png" sizes="16x16" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="description" content="I'm a web developer / designer who builds websites from front to back.  From simple landing pages to multi-page complex web apps, hosting and more.">
     <meta property="og:title" content="Rick Heffren Full Stack Web Development and Design">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.rickheffren.com">
-    <meta property="og:image" content="http://www.rickheffren.com/img/og.png">
+    <meta property="og:image" content="https://www.rickheffren.com/img/og.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:alt" content="I love to code">
-    <meta property="og:description" content="Rick Heffren Full Stack Web Development and Design">
+    <meta property="og:description" content="I'm a web developer / designer who builds websites from front to back.  From simple landing pages to multi-page complex web apps, hosting and more.">
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
@@ -21,18 +33,23 @@
         <div class="header">
           <p class="logo">  Rick Heffren</p>
           <a href="#menu">
-            <img class="hamburger-menu" src="/img/hamburger.svg">
+            <img class="hamburger-menu" src="/img/hamburger.svg" alt="hamburger menu">
           </a>
           </div>
       </div>
     </header>
     <main>
       <div class="heading-container">
-        <h1>I <span class="heart">❤️</span> to code.</h1>
-        <h2 class="heading-secondary">
-          Full Stack - 3D<br>
-          Design • Develop • Deploy
-        </h2>
+        <div class="fromLeft">
+          <span class="heading-tagline">I </span><span class="heading-heart">❤️</span><span class="heading-tagline"> to code.</span>
+        </div>
+        <div class="fromRight">
+          <h1>Full Stack Developer</h1><br>
+          <h2 class="heading-secondary">
+            Design • Develop • Deploy
+          </h2>
+        </div>
+
         <a href="/questionnaire">
         <button class="lets-build-button"> let's build your website </button>
         </a>
@@ -44,24 +61,27 @@
         <div class="popup__content popup__content--transparent">
           <a href="#"><img class="popup__content--cancel"src="/img/x.svg" alt="cancel"></a>
           <div class="popup__content--about">
-            <h1>About</h1>
+            <span class="heading-text">  About</span>
             <p>Hi, I’m Rick. I’ve been building and programming computers since I built my first
               IBM 8086 pc as a kid back in the 80’s. I have experience programming in various languages
-              such as objective c, swift, c++, c and javascript. These days I’m focused heavily on full
+              such as objective c, swift, c++, c and javascript. These days I’m focusing on full
               stack web development. I'd love the opportunity to work on your next web project</p>
           </div>
           <div class="popup__content--tools">
-            <h1>My Tools</h1>
+            <span class="heading-text left">  My Tools</span>
             <img class="tools-img"src="/img/tool-group.svg" alt="tools">
           </div>
           <div class="popup__content--work">
-            <h1>Latest Project</h1>
+            <span class="heading-text">  Latest Project</span>
             <p>
               <a href="http://www.dosage.vet" target="_blank">• www.dosage.vet</a><br>
             </p>
+            <a href="mailto:inquiries@rickheffren.com?subject=Inquiry about services" class="designer designer-popup">Contact Me</a>
           </div>
         </div>
       </div>
     </div>
+    <a href="mailto:inquiries@rickheffren.com?subject=Inquiry about services" class="designer">Looking for additional website functionality, or are you a designer looking for a developer?</a>
+
   </body>
 </html>

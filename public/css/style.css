@@ -109,18 +109,32 @@ body {
   color: #fff; }
 
 h1 {
-  font-size: 8rem;
+  color: #747474;
   font-weight: 200;
-  animation: moveInLeft 1.25s ease-out; }
-  h1 .heart {
-    font-size: 4.8rem; }
+  font-size: 4rem;
+  line-height: 5rem; }
+  @media (max-width: 31.25rem) {
+    h1 {
+      font-size: 3rem; } }
 
 h2 {
   color: #747474;
   font-weight: 200;
   font-size: 4rem;
-  line-height: 5rem;
-  animation: moveInRight 1.25s ease-out; }
+  line-height: 5rem; }
+
+.heading-tagline {
+  font-size: 8rem;
+  animation: moveInLeft 1.25s ease-out; }
+  @media (max-width: 31.25rem) {
+    .heading-tagline {
+      font-size: 6rem; } }
+
+.heading-heart {
+  font-size: 4.6rem; }
+  @media (max-width: 31.25rem) {
+    .heading-heart {
+      font-size: 3.6rem; } }
 
 .logo {
   color: #fff;
@@ -143,23 +157,24 @@ h2 {
   .header__q {
     margin-bottom: 25rem; }
 
-.heading-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -200%);
-  height: 10rem;
-  width: 100%;
-  text-align: center; }
-
-.heading-secondary {
-  position: relative;
-  margin-top: -2rem; }
-  @media (max-width: 43.75em) {
-    .heading-secondary {
-      margin-top: 1rem;
-      font-size: 3rem;
-      line-height: 3.5rem; } }
+.heading {
+  backface-visibility: hidden; }
+  .heading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    height: 10rem;
+    width: 100%;
+    text-align: center; }
+  .heading-secondary {
+    position: relative;
+    margin-top: -2rem; }
+    @media (max-width: 43.75em) {
+      .heading-secondary {
+        margin-top: 1rem;
+        font-size: 3rem;
+        line-height: 3.5rem; } }
 
 .lets-build-button {
   animation: moveInBottom 1s ease-out;
@@ -182,6 +197,33 @@ h2 {
   @media (max-width: 31.25rem) {
     .lets-build-button {
       width: 23rem; } }
+
+.fromRight {
+  margin-top: -1rem; }
+  @media (min-width: 53rem) {
+    .fromRight {
+      animation: moveInRight 1.25s ease-out; } }
+  @media (max-width: 31.25rem) {
+    .fromRight h2 {
+      font-size: 3rem;
+      margin-top: -1.5rem; } }
+
+@media (min-width: 53rem) {
+  .fromLeft {
+    animation: moveInLeft 1.25s ease-out; } }
+
+.designer {
+  width: 100%;
+  text-align: center;
+  color: #65abb6;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: underline;
+  font-size: 1.75rem; }
+  .designer-popup {
+    font-size: 2.5rem; }
 
 .popup {
   height: 100vh;
@@ -213,7 +255,7 @@ h2 {
       top: 3rem;
       right: 3rem;
       font-weight: 200; }
-    .popup__content h1 {
+    .popup__content .heading-text {
       text-align: left;
       font-size: 2.5rem; }
     .popup__content p {
@@ -252,9 +294,15 @@ h2 {
         .popup__content--work {
           padding: 0 1.25rem; } }
 
+.left {
+  text-align: left; }
+
 .tools-img {
-  padding-top: 2rem;
+  padding-top: 5rem;
   width: 75%; }
+  @media (max-width: 22.4rem) {
+    .tools-img {
+      padding-top: 2rem; } }
 
 .circle {
   text-align: center;

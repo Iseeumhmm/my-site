@@ -8,12 +8,13 @@ body {
 }
 
 h1 {
-  font-size: 8rem;
+  color: #747474;
   font-weight: 200;
-  .heart {
-    font-size: 4.8rem;
+  font-size: 4rem;
+  line-height: 5rem;
+  @include respond(31.25rem) {
+    font-size: 3rem;
   }
-  animation: moveInLeft 1.25s ease-out;
 }
 
 h2 {
@@ -21,5 +22,20 @@ h2 {
   font-weight: 200;
   font-size: 4rem;
   line-height: 5rem;
-  animation: moveInRight 1.25s ease-out;
+}
+
+.heading {
+  &-tagline {
+    font-size: 8rem;
+    @include respond(31.25rem) {
+      font-size: 6rem;
+    }
+    animation: moveInLeft 1.25s ease-out;
+  }
+  &-heart {
+    font-size: 4.6rem;
+    @include respond(31.25rem) {
+      font-size: 3.6rem;
+    }
+  }
 }

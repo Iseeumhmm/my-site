@@ -1,4 +1,5 @@
 .heading {
+  backface-visibility: hidden;
   &-container {
     position: absolute;
     top: 50%;
@@ -39,4 +40,36 @@
   -webkit-appearance: none;
     -moz-appearance: none;
   box-shadow: 0 2rem 4rem rgba(#000, .2);
+}
+.fromRight {
+  margin-top: -1rem;
+  @media (min-width: 53rem) {
+    animation: moveInRight 1.25s ease-out;
+  }
+  h2 {
+    @include respond(31.25rem) {
+      font-size: 3rem;
+      margin-top: -1.5rem;
+    }
+  }
+}
+.fromLeft {
+  @media (min-width: 53rem) {
+    animation: moveInLeft 1.25s ease-out;
+  }
+}
+
+.designer {
+  width: 100%;
+  text-align: center;
+  color: #65abb6;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: underline;
+  font-size: 1.75rem;
+  &-popup {
+    font-size: 2.5rem;
+  }
 }
