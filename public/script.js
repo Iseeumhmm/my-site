@@ -1,8 +1,8 @@
 
-  var div = document.getElementById('question-one');
-  setTimeout(function() {
-      div.focus();
-  }, 0);
+  // var div = document.getElementById('question-one');
+  // setTimeout(function() {
+  //     div.focus();
+  // }, 0);
 
 
 
@@ -23,7 +23,7 @@ var send = function() {
 
     // Send form data to api
     var request = new XMLHttpRequest();
-    request.open('POST', 'http://localhost:3000/005312', true);
+    request.open('POST', '/005312', true);
 
     var formData = new FormData();
     formData.append('name', name);
@@ -43,6 +43,7 @@ var send = function() {
     if(checkEmail.checkValidity()) {
       request.send(formData);
       console.log(request.response);
+      alert("Thank you!  A copy of this questionnaire was sent to your inbox.");
       document.location.href = ("/");
     } else {
       alert("It seems there's a problem with your email: " + document.getElementById('email').validationMessage);

@@ -41,6 +41,9 @@
       width: 95%;
     }
     height: 53rem;
+    @include respond(53em) {
+      height: 58rem;
+    }
     border-radius: 4px;
     overflow: hidden;
     background-color: rgba(0,0,0, 0.88);
@@ -56,7 +59,7 @@
     &--about {
       padding: 4rem 6rem 0 ;
       @include respond(43.75em) {
-        padding: 8rem 1.25rem 0;
+        padding: 4rem 1.25rem 0;
       }
 
     }
@@ -82,9 +85,9 @@
 }
 
 .tools-img {
-  padding-top: 5rem;
+  padding-top: 2rem;
   @include respond(22.4rem) {
     padding-top: 2rem;
   }
-  width: 75%;
+  width: 95%;
 }

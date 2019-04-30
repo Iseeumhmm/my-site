@@ -77,15 +77,42 @@
         border-radius: 0 !important;
         border-right-width: 0 !important;
       }
-      .btn table {
-        max-width: 100% !important;
-        width: 100% !important;
-      }
-      .btn a {
-        max-width: 100% !important;
-        padding: 12px 5px !important;
-        width: 100% !important;
-      }
+      .btn {
+       box-sizing: border-box;
+       width: 100%; }
+       .btn > tbody > tr > td {
+         padding-bottom: 15px; }
+       .btn table {
+         width: auto;
+     }
+       .btn table td {
+         background-color: #ffffff;
+         border-radius: 5px;
+         text-align: center;
+     }
+     .btn a {
+       background-color: #ffffff;
+       border: solid 1px #65abb6;
+       border-radius: 5px;
+       box-sizing: border-box;
+       color: #65abb6;
+       cursor: pointer;
+       display: inline-block;
+       font-size: 14px;
+       font-weight: bold;
+       margin: 0;
+       padding: 12px 25px;
+       text-decoration: none;
+       text-transform: capitalize;
+     }
+     .btn-primary table td {
+       background-color: #65abb6;
+     }
+     .btn-primary a {
+       background-color: #65abb6;
+       border-color: #65abb6;
+       color: #ffffff;
+     }
       .img-responsive {
         height: auto !important;
         max-width: 100% !important;
@@ -149,7 +176,25 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
                         <h1 style="color: #222222; font-family: sans-serif; font-weight: 300; line-height: 1.4; margin: 0; Margin-bottom: 30px; font-size: 35px; text-align: center; text-transform: capitalize;">Let's build your website!</h1>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; Margin: 0; Margin-bottom: 15px;">Hi <%=data.name%>, thank you for visiting my site and filling out the questionnaire.  I've included our Q and A below so we both have a copy to reference.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; Margin: 0; Margin-bottom: 15px;">Hi <%=data.name%>, thank you for visiting my site and filling out the questionnaire.  I've included a copy of it below.</p>
+                        <!-- //////////////// Button ///////////////// -->
+
+                          <!-- <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                            <tbody>
+                              <tr>
+                                <td align="left">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td> <a href="https://rickheffren.com" target="_blank"></a> </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table> -->
+
                         <table border="0" cellpadding="0" cellspacing="0" class="hr" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                           <tbody>
                             <tr>
@@ -189,9 +234,8 @@
               </tr>
 
               <!-- END MAIN CONTENT AREA -->
-
-              <!-- START CALL OUT --><tr>
-                <td class="wrapper section-callout" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px; background-color: #65abb6; color: #ffffff;" valign="top" bgcolor="#1abc9c">
+              <tr>
+                <td class="wrapper section-callout" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px; background-color: #747474; color: #ffffff;" valign="top" bgcolor="#1abc9c">
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                     <tr>
                       <td class="align-center" style="font-family: sans-serif; font-size: 18px; vertical-align: top; text-align: center; color: #ffffff;" valign="top" align="center">

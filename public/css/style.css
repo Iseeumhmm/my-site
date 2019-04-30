@@ -142,9 +142,12 @@ h2 {
   padding-left: 4rem;
   padding-top: 1rem;
   font-family: "Garamond";
-  font-size: 3rem; }
+  font-size: 2rem; }
   .logo--q {
     color: #747474; }
+
+.small {
+  font-size: 1.5rem; }
 
 .header {
   height: 12vh;
@@ -213,7 +216,7 @@ h2 {
     animation: moveInLeft 1.25s ease-out; } }
 
 .designer {
-  width: 100%;
+  width: 80%;
   text-align: center;
   color: #65abb6;
   position: absolute;
@@ -224,6 +227,9 @@ h2 {
   font-size: 1.75rem; }
   .designer-popup {
     font-size: 2.5rem; }
+    @media (max-width: 47rem) {
+      .designer-popup {
+        padding-bottom: 3rem; } }
 
 .popup {
   height: 100vh;
@@ -271,6 +277,9 @@ h2 {
     @media (max-width: 43.75em) {
       .popup__content {
         width: 95%; } }
+    @media (max-width: 53em) {
+      .popup__content {
+        height: 58rem; } }
     .popup__content--transparent {
       width: 100%;
       background-color: rgba(116, 116, 116, 0.3); }
@@ -281,7 +290,7 @@ h2 {
       padding: 4rem 6rem 0; }
       @media (max-width: 43.75em) {
         .popup__content--about {
-          padding: 8rem 1.25rem 0; } }
+          padding: 4rem 1.25rem 0; } }
     .popup__content--tools {
       text-align: center;
       padding: 2rem 6rem; }
@@ -298,8 +307,8 @@ h2 {
   text-align: left; }
 
 .tools-img {
-  padding-top: 5rem;
-  width: 75%; }
+  padding-top: 2rem;
+  width: 95%; }
   @media (max-width: 22.4rem) {
     .tools-img {
       padding-top: 2rem; } }
@@ -615,21 +624,9 @@ h2 {
   bottom: 5rem;
   animation: rotateArrow 1s ease-out;
   backface-visibility: hidden; }
-  @media (max-width: 31.25rem) {
+  @media (max-width: 47rem) {
     .arrow {
-      height: 8rem;
-      right: 15rem;
-      bottom: 5rem; } }
-
-.arrow-2 {
-  display: block;
-  height: 10rem;
-  margin: 0 auto;
-  position: relative;
-  left: 18rem;
-  bottom: 15rem;
-  animation: rotateArrowReverse 1s ease-out;
-  backface-visibility: hidden; }
+      visibility: hidden; } }
 
 .questions {
   position: relative;

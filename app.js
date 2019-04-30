@@ -19,7 +19,7 @@ app.listen(process.env.PORT || 3000, function() {
 
 
 const smtpTransport = nodemailer.createTransport({
-  host: "mail.rickheffren.com",
+  host: "mail",
   port: 465,
   secure: true, // use TLS
 
@@ -85,6 +85,7 @@ app.post("/005312", (req,res) => {
       const mailOptions = {
            from: process.env.EMAIL,
            to: passData.email,
+           cc: "inquiries@rickheffren.com",
            subject: "Wesite design inquiry",
            html: data
       };

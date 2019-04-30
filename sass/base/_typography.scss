@@ -39,3 +39,17 @@ h2 {
     }
   }
 }
+.logo {
+  color: #fff;
+  width: 20rem;
+  padding-left: 4rem;
+  padding-top: 1rem;
+  font-family: "Garamond";
+  font-size: 2rem;
+  &--q {
+    color: #747474;
+  }
+}
+.small {
+  font-size: 1.5rem;
+}

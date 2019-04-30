@@ -20,22 +20,12 @@
   position: relative;
   right: 20rem;
   bottom: 5rem;
-  @include respond(31.25rem){
-    height: 8rem;
-    right: 15rem;
-    bottom: 5rem;
+  @include respond(47rem){
+    visibility: hidden;
+    // height: 8rem;
+    // right: 15rem;
+    // bottom: 5rem;
   }
   animation: rotateArrow 1s ease-out;
-  backface-visibility: hidden;
-}
-
-.arrow-2 {
-  display: block;
-  height: 10rem;
-  margin: 0 auto;
-  position: relative;
-  left: 18rem;
-  bottom: 15rem;
-  animation: rotateArrowReverse 1s ease-out;
   backface-visibility: hidden;
 }
